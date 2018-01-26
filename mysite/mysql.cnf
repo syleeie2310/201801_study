@@ -1,0 +1,6 @@
+[client]
+database = MYSITE
+host = 'localhost'
+user = root
+password = qkddnjs1217
+default-character-set = utf8
