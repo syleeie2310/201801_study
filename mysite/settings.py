@@ -43,6 +43,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'portfolio',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -84,7 +85,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'OPTIONS': {
-            'read_default_file': '/home/syleeie/workspace/django/mysite/mysql.cnf',
+            'read_default_file': '/home/syleeie/workspace/201801_study/mysite/mysql.cnf',
             'sql_mode': 'traditional',
             'init_command': 'SET foreign_key_checks = 0;',
         },
@@ -97,7 +98,6 @@ DATABASES = {
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'Asia/Seoul'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 USE_I18N = True
 
@@ -110,3 +110,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
